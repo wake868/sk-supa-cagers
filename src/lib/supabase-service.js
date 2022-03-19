@@ -3,7 +3,7 @@ import supabase from "$lib/supabase-client";
 export async function getArticles() {
   const { data, error } = await supabase
     .from("articles")
-    .select("*")
+    .select("title, blurb, slug")
     .order("rank", { ascending: true });
 
   return {
@@ -15,7 +15,7 @@ export async function getArticles() {
 export async function getArticle(slug) {
   const { data, error } = await supabase
     .from("articles")
-    .select("*")
+    .select("title, body")
     .eq("slug", slug)
     .limit(1);
 
