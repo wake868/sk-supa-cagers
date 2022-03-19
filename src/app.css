@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base styles */
+body {
+  background: url("/static/banner-court-gs.jpg");
+  /* font-family: "Jockey One", sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #3a3a3a;
+}

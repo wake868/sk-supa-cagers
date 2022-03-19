@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "css.customData": [
+    ".vscode/css_custom_data.json"
+  ],
+  "prettier.trailingComma": "none"
+}
